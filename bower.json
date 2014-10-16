@@ -1,0 +1,8 @@
+{
+  "name": "rps",
+  "private": true,
+  "dependencies": {
+    "modernizr": "~2.8.2",
+    "normalize.css": "~3.0.2"
+  }
+}

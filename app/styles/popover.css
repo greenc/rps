@@ -1,0 +1,47 @@
+/*****************************************
+ * Popover
+ *****************************************/
+
+.popover {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popover .outer {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+.popover .inner {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.popover .centered {
+	margin: auto;
+	max-width: 600px;
+	height: 60%;
+	max-height: 500px;
+	padding: 30px 40px;
+	background-color: rgba(255, 255, 255, 0.95);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+	border-radius: 8px;
+	color: #333;
+	text-align: left;
+	line-height: 24px;
+}
+
+.popover .scroll-content {
+	height: 80%;
+	overflow: auto;
+}
+
+.popover .button-group {
+	margin-top: 5%;
+	height: 15%;
+}

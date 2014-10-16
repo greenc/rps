@@ -1,0 +1,17 @@
+/*****************************************
+ * General
+ *****************************************/
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	background: #e43a15;
+	background: linear-gradient(180deg, #e43a15 10%, #e63323 90%);
+	font-family: "Patua One", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #fff;
+	font-size: 16px;
+	line-height: 26px;
+}

@@ -1,0 +1,81 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title>Rock, Paper, Scissors</title>
+    <meta name="description" content="A simple implementation of Rock, Paper, Scissors in the client" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Patua+One" />
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/normalize.css/normalize.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/buttons.css" />
+    <link rel="stylesheet" href="styles/popover.css" />
+    <link rel="stylesheet" href="styles/misc.css" />
+    <!-- endbuild -->
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+
+</head>
+<body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="game">
+        <div class="viewport">
+            <h1 class="title">Rock,<br>Paper,<br>Scissors.</h1>
+        </div>
+        <nav class="options">
+            <ul class="button-group">
+                <li><button type="button" class="button newGame">New Game</button></li>
+                <li><button type="button" class="button showRules">Rules</button></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="popover rules">
+        <div class="outer">
+            <div class="inner">
+                <div class="centered">
+                    <div class="scroll-content">
+                        <h2>How to play</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quasi, voluptatem, maxime sed magnam iure maiores sint, hic odit nulla fugit quod, vero mollitia quis doloremque dolorum adipisci? Excepturi, assumenda.</p>
+                        <h3>Sub Heading</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, sed saepe possimus sunt fuga ab consequuntur, animi quisquam labore quasi.</p>
+                        <ol>
+                            <li>Repudiandae quod commodi aut, expedita id libero, in voluptatum dolores quis ducimus temporibus.</li>
+                            <li>Perferendis ullam, consectetur aliquam fugiat possimus placeat? Hic, iste, obcaecati.</li>
+                            <li>Aliquid nisi doloremque iure consectetur facilis ipsam saepe aut odio! Ducimus corporis officiis suscipit rerum obcaecati!</li>
+                        </ol>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo aperiam labore cupiditate voluptatem est fuga deserunt accusamus blanditiis nam!</p>
+                    </div>
+                    <ul class="button-group">
+                        <li><button type="button" class="button invert small closeRules">Got it!</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({app,.tmp}) scripts/main.js -->
+    <script src="scripts/selectors.js"></script>
+    <script src="scripts/helpers.js"></script>
+    <script src="scripts/events.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+</body>
+</html>
