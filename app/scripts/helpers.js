@@ -41,6 +41,27 @@ Game.helpers = (function() {
 		}
 	};
 
+	/**
+	 * Mimics jQuery's shallow $.extend method
+
+	 * @param  {Object}  out  {}
+	 * @return {Object}       Extended object
+	 */
+	pub.extend = function(out) {
+		out = out || {};
+		for(var i = 1; i < arguments.length; i++) {
+			if(!arguments[i]) {
+				continue;
+			}
+			for(var key in arguments[i]) {
+				if(arguments[i].hasOwnProperty(key)) {
+					out[key] = arguments[i][key];
+				}
+			}
+		}
+		return out;
+	};
+
 	return pub;
 
 })();

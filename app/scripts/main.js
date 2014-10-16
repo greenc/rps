@@ -2,5 +2,5 @@
 
 var Game = Game || {};
 
-// Attach event handlers
-Game.events.init();
+Game.events.init(); // Attach event handlers
+Game.state.load();  // Load game state
