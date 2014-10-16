@@ -3,7 +3,7 @@
  */
 
 // And the lord said "Let there be a namespace"
-var Game = Game || {};
+var Game = {};
 
 // Config stuff
 Game.config = {
