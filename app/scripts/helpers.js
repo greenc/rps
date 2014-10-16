@@ -1,4 +1,4 @@
-var Game = Game || {};
+/* global Game */
 
 /**
  * Generic helper methods

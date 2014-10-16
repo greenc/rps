@@ -1,4 +1,4 @@
-var Game = Game || {};
+/* global Game */
 
 /**
  * Event handlers and their bindings
