@@ -12,7 +12,7 @@ Game.events = (function() {
 	var pub = {};
 
 	/**
-	 * Resets current game state and begins a new game
+	 * Reset current game state and begin a new game
 	 */
 	var startNewGame = function() {
 		Game.state.reset();
@@ -20,21 +20,21 @@ Game.events = (function() {
 	};
 
 	/**
-	 * Visually shows the popover overlay
+	 * Visually show the popover overlay
 	 */
 	var openPopover = function() {
 		Game.selectors.popover.style.display = 'block';
 	};
 
 	/**
-	 * Visually hides the popover overlay
+	 * Visually hide the popover overlay
 	 */
 	var closePopover = function() {
 		Game.selectors.popover.style.display = 'none';
 	};
 
 	/**
-	 * Attaches DOM event handlers
+	 * Attach DOM event handlers
 	 */
 	var attachEvents = function() {
 		Game.selectors.showRules.addEventListener('click', openPopover);

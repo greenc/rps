@@ -12,8 +12,8 @@ Game.actions = (function() {
 	var pub = {};
 
 	/**
-	 * Increases score counter by one to the appropriate player
-	 * and returns new score for that player
+	 * Increase score counter by one to the appropriate player
+	 * and return new score for that player
 	 *
 	 * @param  {String}  to  player || cpu
 	 * @return {Number}      New score
@@ -23,8 +23,8 @@ Game.actions = (function() {
 	};
 
 	/**
-	 * Logs the result of a move for the current point
-	 * and returns the result
+	 * Log the result of a move for the current point
+	 * and return the result
 	 *
 	 * @param  {Number}  result  (0, 1 or 2)
 	 * @return {Number}  result

@@ -26,7 +26,7 @@ Game.state = (function() {
 	pub.current = {};
 
 	/**
-	 * Resets the saved and current game state
+	 * Reset the saved and current game state
 	 */
 	pub.reset = function() {
 		Game.localStorage.remove(key);
@@ -34,14 +34,14 @@ Game.state = (function() {
 	};
 
 	/**
-	 * Saves game state to localStorage
+	 * Save game state to localStorage
 	 */
 	pub.save = function() {
 		Game.localStorage.set(key, pub.current);
 	};
 
 	/**
-	 * Loads game state if set, or defaults if not
+	 * Load game state if set, or defaults if not
 	 */
 	pub.load = function() {
 		pub.current = Game.localStorage.isSet(key) ? Game.localStorage.get(key) : defaults;
