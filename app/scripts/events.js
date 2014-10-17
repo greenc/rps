@@ -1,4 +1,4 @@
-/* global Game, alert */
+/* global Game */
 
 /**
  * Event handlers and their bindings
@@ -16,7 +16,7 @@ Game.events = (function() {
 	 */
 	var startNewGame = function() {
 		Game.state.reset();
-		alert('Starting a new game!');
+		console.log('Starting a new game :)');
 	};
 
 	/**
