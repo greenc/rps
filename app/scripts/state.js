@@ -14,7 +14,7 @@ Game.state = (function() {
 
 	// Initial state to use when a new game begins
 	var defaults = {
-		currentPoint: [], // 0 = tie, 1 = player win, 2 = cpu win
+		thisPoint: [],    // 0 = tie, 1 = player win, 2 = cpu win
 		bestOf: 3,        // Number of moves to decide each point
 		score: {
 			player: 0,
