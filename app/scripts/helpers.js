@@ -43,7 +43,7 @@ Game.helpers = (function() {
 
 	/**
 	 * Mimics jQuery's shallow $.extend method
-
+	 *
 	 * @param  {Object}  out  {}
 	 * @return {Object}       Extended object
 	 */

@@ -14,10 +14,12 @@ Game.state = (function() {
 
 	// Initial state to use when a new game begins
 	var defaults = {
-		pointsPlayer : 0,  // Human player's points
-		pointsCpu    : 0,  // Computer's points
-		currentPoint : [], // 0 = tie, 1 = player win, 2 = cpu win
-		bestOf       : 3   // Number of moves to decide each point
+		currentPoint: [], // 0 = tie, 1 = player win, 2 = cpu win
+		bestOf: 3,        // Number of moves to decide each point
+		score: {
+			player: 0,
+			cpu: 0
+		}
 	};
 
 	// Active game state
