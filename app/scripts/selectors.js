@@ -12,7 +12,8 @@ Game.selectors = (function() {
 	var pub = {
 		popover    : document.querySelector('.popover'),
 		showRules  : document.querySelector('.button.showRules'),
-		closeRules : document.querySelector('.button.closeRules')
+		closeRules : document.querySelector('.button.closeRules'),
+		newGame    : document.querySelector('.button.newGame')
 	};
 
 	return pub;

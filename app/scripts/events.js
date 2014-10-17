@@ -1,4 +1,4 @@
-/* global Game */
+/* global Game, alert */
 
 /**
  * Event handlers and their bindings
@@ -10,6 +10,14 @@ Game.events = (function() {
 	'use strict';
 
 	var pub = {};
+
+	/**
+	 * Resets current game state and begins a new game
+	 */
+	var startNewGame = function() {
+		Game.state.reset();
+		alert('Starting a new game!');
+	};
 
 	/**
 	 * Visually shows the popover overlay
@@ -29,9 +37,9 @@ Game.events = (function() {
 	 * Attaches DOM event handlers
 	 */
 	var attachEvents = function() {
-
 		Game.selectors.showRules.addEventListener('click', openPopover);
 		Game.selectors.closeRules.addEventListener('click', closePopover);
+		Game.selectors.newGame.addEventListener('click', startNewGame);
 	};
 
 	/**
