@@ -5,7 +5,7 @@
 // And the lord said "Let there be a namespace"
 var Game = {};
 
-// Config stuff
 Game.config = {
-	storageKey : 'rpc_state'
+	roundSize  : 3,          // Best of n rounds per point
+	storageKey : 'rpc_state' // localStorage key
 };

@@ -9,13 +9,14 @@ Game.state = (function() {
 
 	'use strict';
 
-	var pub = {};
-	var key = Game.config.storageKey;
+	var pub  = {},
+		key  = Game.config.storageKey,
+		size = Game.config.roundSize;
 
 	// Initial state to use when a new game begins
 	var defaults = {
 		thisPoint: [],    // 0 = tie, 1 = player win, 2 = cpu win
-		bestOf: 3,        // Number of moves to decide each point
+		bestOf: size,     // Number of moves to decide each point
 		score: {
 			player: 0,
 			cpu: 0

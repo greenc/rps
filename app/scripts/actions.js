@@ -34,6 +34,14 @@ Game.actions = (function() {
 		return result;
 	};
 
+	/**
+	 * Decides what move to play - currently quite dumb
+	 * @return {String} The move to play, represented as a string
+	 */
+	pub.decideMove = function() {
+		// todo: this!
+	};
+
 	return pub;
 
 })();
