@@ -13,6 +13,13 @@ Game.config = {
 	// Best of n rounds per point
 	roundSize : 3,
 
+	// Move mappings
+	moves : [
+		'rock',
+		'paper',
+		'scissors'
+	],
+
 	// Adjacency matrix:
 	// -1 = player win
 	//  0 = tie,
