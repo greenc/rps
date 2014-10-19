@@ -14,8 +14,8 @@ Game.helpers = (function() {
 	/**
 	 * Adds a class to a DOM element
 	 * 
-	 * @param {Object}  el         DOM node
-	 * @param {String}  className  Class to add
+	 * @param {Object} el        DOM node
+	 * @param {String} className Class to add
 	 */
 	pub.addClass = function(el, className) {
 		if(el.classList) {
@@ -28,8 +28,8 @@ Game.helpers = (function() {
 	/**
 	 * Removes a class from a DOM element
 	 * 
-	 * @param {Object}  el         DOM node
-	 * @param {String}  className  Class to remove
+	 * @param {Object} el        DOM node
+	 * @param {String} className Class to remove
 	 */
 	pub.removeClass = function(el, className) {
 		var regex;
@@ -44,8 +44,8 @@ Game.helpers = (function() {
 	/**
 	 * Mimics jQuery's shallow $.extend method
 	 *
-	 * @param  {Object}  out  {}
-	 * @return {Object}       Extended object
+	 * @param  {Object} out {}
+	 * @return {Object}     Extended object
 	 */
 	pub.extend = function(out) {
 		out = out || {};
@@ -60,6 +60,18 @@ Game.helpers = (function() {
 			}
 		}
 		return out;
+	};
+
+	/**
+	 * Returns a random integer between the
+	 * 2 supplied values (inclusive)
+	 *
+	 * @param  {Number} min Min int
+	 * @param  {Number} max Max int
+	 * @return {Number}     Random int
+	 */
+	pub.getRandomInteger = function(min, max) {
+		return Math.floor(Math.random() * (max - min + 1)) + min;
 	};
 
 	return pub;
