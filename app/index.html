@@ -16,8 +16,10 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/ui.css" />
     <link rel="stylesheet" href="styles/buttons.css" />
     <link rel="stylesheet" href="styles/popover.css" />
+    <link rel="stylesheet" href="styles/animations.css" />
     <!-- endbuild -->
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
@@ -26,7 +28,27 @@
 <body>
     <div class="game">
         <div class="viewport">
-            <h1 class="title">Rock,<br>Paper,<br>Scissors.</h1>
+            <h1 class="title show-fade">Rock,<br>Paper,<br>Scissors.</h1>
+            <div class="scoreboard hide-fade cf">
+                <div class="points score-player">
+                    <h2>Player</h2>
+                    <div>0</div>
+                </div>
+                <ul class="rounds"></ul>
+                <div class="points score-cpu">
+                    <h2>Computer</h2>
+                    <div>0</div>
+                </div>
+            </div>
+            <div class="choose-move hide-fade">
+                <h3>Choose your move:</h3>
+                <ul>
+                    <li class="choose-rock">Rock</li>
+                    <li class="choose-paper">Paper</li>
+                    <li class="choose-scissors">Scissors</li>
+                    <li class="choose-cpu">CPU</li>
+                </ul>
+            </div>
         </div>
         <nav class="options">
             <ul class="button-group">
@@ -73,6 +95,7 @@
     <script src="scripts/events.js"></script>
     <script src="scripts/state.js"></script>
     <script src="scripts/actions.js"></script>
+    <script src="scripts/ui.js"></script>
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
 </body>

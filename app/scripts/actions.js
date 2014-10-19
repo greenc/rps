@@ -37,7 +37,8 @@ Game.actions = (function() {
 	/**
 	 * Decide what move to play - currently quite dumb
 	 * 
-	 * @return {String} The move to play, as an int
+	 * @return {String} The move to play, as an int that
+	 * represents the move's position in Game.config.matrix
 	 */
 	pub.chooseMove = function() {
 		var numMoves = Game.config.matrix.length;

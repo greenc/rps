@@ -16,21 +16,28 @@ Game.events = (function() {
 	 */
 	var startNewGame = function() {
 		Game.state.reset();
-		console.log('Starting a new game :)');
+		Game.ui.createRoundCounter();
+		Game.ui.updateScore();
+		Game.helpers.removeClass(Game.selectors.title, 'show-fade');
+		Game.helpers.addClass(Game.selectors.title, 'hide-fade');
+		Game.helpers.removeClass(Game.selectors.scoreboard, 'hide-fade');
+		Game.helpers.addClass(Game.selectors.scoreboard, 'show-fade');
 	};
 
 	/**
 	 * Visually show the popover overlay
 	 */
 	var openPopover = function() {
-		Game.selectors.popover.style.display = 'block';
+		Game.helpers.removeClass(Game.selectors.popover, 'hide-fade');
+		Game.helpers.addClass(Game.selectors.popover, 'show-fade');
 	};
 
 	/**
 	 * Visually hide the popover overlay
 	 */
 	var closePopover = function() {
-		Game.selectors.popover.style.display = 'none';
+		Game.helpers.removeClass(Game.selectors.popover, 'show-fade');
+		Game.helpers.addClass(Game.selectors.popover, 'hide-fade');
 	};
 
 	/**
