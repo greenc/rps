@@ -49,8 +49,8 @@ Game.helpers = (function() {
 	 * @param  {String} add    Class to add
 	 */
 	pub.swapClass = function(el, remove, add) {
-		pub.removeClass(remove);
-		pub.addClass(add);
+		pub.removeClass(el, remove);
+		pub.addClass(el, add);
 	};
 
 	/**
