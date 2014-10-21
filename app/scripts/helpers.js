@@ -42,6 +42,18 @@ Game.helpers = (function() {
 	};
 
 	/**
+	 * Replace a class with another
+
+	 * @param  {Object} el     DOM node
+	 * @param  {String} remove Class to remove
+	 * @param  {String} add    Class to add
+	 */
+	pub.swapClass = function(el, remove, add) {
+		pub.removeClass(remove);
+		pub.addClass(add);
+	};
+
+	/**
 	 * Returns a random integer between the
 	 * 2 supplied values (inclusive)
 	 *

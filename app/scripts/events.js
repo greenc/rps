@@ -17,27 +17,25 @@ Game.events = (function() {
 	var startNewGame = function() {
 		Game.state.reset();
 		Game.ui.createRoundCounter();
+		Game.ui.createPlayerChoiceMenu();
 		Game.ui.updateScore();
-		Game.helpers.removeClass(Game.selectors.title, 'show-fade');
-		Game.helpers.addClass(Game.selectors.title, 'hide-fade');
-		Game.helpers.removeClass(Game.selectors.scoreboard, 'hide-fade');
-		Game.helpers.addClass(Game.selectors.scoreboard, 'show-fade');
+		Game.helpers.swapClass(Game.selectors.title, 'show-fade', 'hide-fade');
+		Game.helpers.swapClass(Game.selectors.scoreboard, 'hide-fade', 'show-fade');
+		Game.helpers.swapClass(Game.selectors.chooseMove, 'hide-fade', 'show-fade');
 	};
 
 	/**
 	 * Visually show the popover overlay
 	 */
 	var openPopover = function() {
-		Game.helpers.removeClass(Game.selectors.popover, 'hide-fade');
-		Game.helpers.addClass(Game.selectors.popover, 'show-fade');
+		Game.helpers.swapClass(Game.selectors.popover, 'hide-fade', 'show-fade');
 	};
 
 	/**
 	 * Visually hide the popover overlay
 	 */
 	var closePopover = function() {
-		Game.helpers.removeClass(Game.selectors.popover, 'show-fade');
-		Game.helpers.addClass(Game.selectors.popover, 'hide-fade');
+		Game.helpers.swapClass(Game.selectors.popover, 'show-fade', 'hide-fade');
 	};
 
 	/**

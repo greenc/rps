@@ -13,6 +13,7 @@ Game.selectors = (function() {
 		title       : document.querySelector('.title'),
 		scoreboard  : document.querySelector('.scoreboard'),
 		chooseMove  : document.querySelector('.choose-move'),
+		choices     : document.querySelector('.choices'),
 		popover     : document.querySelector('.popover'),
 		showRules   : document.querySelector('.button.showRules'),
 		closeRules  : document.querySelector('.button.closeRules'),

@@ -40,6 +40,27 @@ Game.ui = (function() {
 		parent.appendChild(frag);
 	};
 
+	/**
+	 * Create the choice options menu
+	 */
+	pub.createPlayerChoiceMenu = function() {
+		var moves  = Game.config.moves,
+			parent = Game.selectors.choices,
+			frag   = document.createDocumentFragment(),
+			el, i;
+
+		parent.innerHTML = '';
+
+		for(i = 0; i < moves.length; i++) {
+			el = document.createElement('li');
+			el.className = 'choose-' + moves[i];
+			el.textContent = moves[i];
+			frag.appendChild(el);
+		}
+
+		parent.appendChild(frag);
+	};
+
 	return pub;
 
 })();

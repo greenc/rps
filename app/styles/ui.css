@@ -53,10 +53,16 @@
 .choose-move li {
 	margin: 0 5px;
 	font-size: 36px;
+	text-transform: capitalize;
 	padding: 30px;
 	cursor: pointer;
 	display: inline-block;
 	border-radius: 8px;
-	background-color: rgba(0, 0, 0, 0.7);
+	background-color: rgba(0, 0, 0, 0.6);
 	text-align: center;
+}
+
+.choose-move li:hover {
+	background-color: rgba(0, 0, 0, 0.7);
+	color: #fcb03c;
 }
